@@ -143,6 +143,7 @@
       async function loadCorgis() {
         const corgis = await fetch('/.netlify/functions/load-corgis').then((res) => res.json())
 
+        console.warn('')
         render(
           html` ${corgis.map((corgi) => html` <${Corgi} corgi=${corgi} /> `)}`,
           document.querySelector('.corgis'),
