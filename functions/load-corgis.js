@@ -34,7 +34,6 @@ exports.handler = async () => {
       boops,
     }
   })
-  console.warn('completeData', completeData)
 
   return {
     statusCode: 200,
